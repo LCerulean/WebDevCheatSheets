@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Cheat Sheat</title>
+    <link href="./cheat_sheet_style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>HTML Cheat Sheat</h1>
+    <h2>Elements</h2>
+      <nav>
+        <a href="#structural">Structural</a>
+        <a href="#format">Format</a>
+        <a href="#table">Table</a>
+      </nav>
+      <p>Most HTML elements follow the format of: <strong><em>&lt;tag&gt</em></strong><em>element</em><strong><em>&lt;/tag&gt</em></strong></p>
+      <img src="./example_code.jpg"/>
+      <br>
+
+      <h3 id="structural">Structual Elements</h3>
+        <table>
+          <tr>
+            <th>Tag</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="code">&lt;html&gt;</td>
+            <td>Indicates that the document is HTML.  It should come immediately after &lt;!DOCTYPE html&gt; and contain the rest of the contents of the file.</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;head&gt;</td>
+            <td>Collection of metadata for the document (title, link, style, script).  This is not visible to the user.</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;body&gt;</td>
+            <td>Contains all content visible to the user.</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;nav&gt;</td>
+            <td>Navigation, usually first thing inside body tag. Links or a list of links should be inside this tag.</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;div&gt;</td>
+            <td>Divides content into sections.  Not strictly necessary, but useful in some circumstances.</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;h1&gt;<br>&lt;h2&gt;...&lt;h6&gt;</td>
+            <td>Headings, with h1 being the highest, and h6 the lowest.</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;p&gt;</td>
+            <td>Paragraph of text.</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;br&gt;</td>
+            <td>Line break.  This does <ins>NOT</ins> use a closing tag.</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;ol&gt;</td>
+            <td>Numbered list. List items must be inside list tags.</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;ul&gt;</td>
+            <td>Bulleted list.  List items must be inside list tags.</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;li&gt;</td>
+            <td>List tag. Creates a numbered or bulleted list item (depending on if inside ordered or unordered list).</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;img/&gt;</td>
+            <td>Insert an image. 
+            This does <ins>NOT</ins> use a second closing tag.<br>Use format: &lt;img src="<em>link/file</em>" alt="<em>text describing image</em>"/&gt;</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;video&gt;</td>
+            <td>Inserts a video.  Controls is necessary to include for user to start/stop the video.<br>Use format: &lt;video src="<em>link/file</em>" controls&gt;<em>Text for "vidoe not supported"</em>&lt;/vidoe&gt;</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;a&gt;</td>
+            <td>Link.<br>Use format: &lt;a href="<em>link address</em>"&gt;<em>Link Text</em>&lt;/a&gt;</td>
+          </tr>
+        </table>
+        <br>
+
+      <h3 id="format">Format Elements</h3>
+        <table>
+          <tr>
+            <th>Tag</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="code">&lt;strong&gt; or &lt;b&gt;</td>
+            <td>Bold</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;em&gt; or &lt;i&gt;</td>
+            <td>Italic</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;small&gt;</td>
+            <td>Small</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;mark&gt;</td>
+            <td>Marked/highlighted</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;del&gt;</td>
+            <td>"Deleted" text/strikethrough</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;ins&gt;</td>
+            <td>"Inserted" text/underlined</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;sub&gt;</td>
+            <td>Subscript</td>
+          </tr>
+          <tr>
+            <td class="code">&lt;sup&gt;</td>
+            <td>Superscript</td>
+          </tr>
+        </table>
+        <br>
+    
+    <h3 id="table">Table Elements</h3>
+      <table>
+        <tr>
+          <th>Tag</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td class="code">&lt;table&gt;</td>
+          <td>Table. All table elements should be inside this.</td>
+        </tr>
+        <tr>
+          <td class="code">&lt;tr&gt;</td>
+          <td>Row. Contains the data for the row.</td>
+        </tr>
+        <tr>
+          <td class="code">&lt;th&gt;</td>
+          <td>Header cell.  Should be inside first row.</td>
+        </tr>
+        <tr>
+          <td class="code">&lt;td&gt;</td>
+          <td>Data cell.  Should be placed inside a row.</td>
+        </tr>
+        <tr>
+          <td class="code">colspan</td>
+          <td>Indicates how many columns a cell should occupy.<br>Use format: &lt;td colspan="<em>number</em>"&gt;<em>data</em>&lt;td&gt;</td>
+        </tr>
+        <tr>
+          <td class="code">rowspan</td>
+          <td>Indicates how many rows a cell should occupy.<br>Use format: &lt;td rowspan="<em>number</em>"&gt;<em>data</em>&lt;td&gt;</td>
+        </tr>
+      </table>
+      <br>
+
+  </body>
+</html>
